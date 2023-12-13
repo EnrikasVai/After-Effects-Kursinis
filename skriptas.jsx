@@ -50,13 +50,16 @@
 
 	app.endUndoGroup();
 	}
+	var color = [30, 84, 118] / 255;
+
+//*********************************************************
 
 	//tekstas
 	var textProperty = textL.property("Source Text");
    		textProperty.setValue("Statybos Profesonalai");
 	//teksto nustatymai
 	 var textDocument = textProperty.value;
-    textDocument.fillColor = [30, 84, 118]/255;
+    textDocument.fillColor = color;
 	textDocument.textAlign = ParagraphJustification.CENTER; 
 	textDocument.fontSize = 72;
 	textDocument.font = "Aileron-Black";
@@ -66,3 +69,6 @@
 	textL.position.setValue([0, 443]);
 
 	myNull.moveToBeginning();
+
+//*********************************************************
+
